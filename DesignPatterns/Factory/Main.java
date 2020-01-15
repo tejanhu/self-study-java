@@ -6,35 +6,14 @@ public class Main{
         Company companyB = new CompanySystemFactory().getInstance("Apple");
         Company companyC = new CompanySystemFactory().getInstance("Virgin");
 
+        CompanySystemFactory csf = new CompanySystemFactory();
+        System.out.println("Company A: ");
+        csf.getCompanyStatus(companyA);
+        System.out.println("Company B: ");
+        csf.getCompanyStatus(companyB);
+        System.out.println("Company C: ");
+        csf.getCompanyStatus(companyC);
 
-
-        System.out.println("Microsoft Hiring Status: ");
-        companyA.employ();
-        System.out.println("Microsoft Rejection Message: ");
-        companyA.reject();
-        System.out.println("Microsoft Firing Message: ");
-        companyA.fire();
-
-        System.out.println("");
-
-        
-
-        System.out.println("Apple Hiring Status: ");
-        companyB.employ();
-        System.out.println("Apple Rejection Message: ");
-        companyB.reject();
-        System.out.println("Apple Firing Message: ");
-        companyB.fire();
-
-        System.out.println("");
-
-
-        System.out.println("Virgin Hiring Status: ");
-        companyC.employ();
-        System.out.println("Virgin Rejection Message: ");
-        companyC.reject();
-        System.out.println("Virgin Firing Message: ");
-        companyC.fire();
 
 
     }

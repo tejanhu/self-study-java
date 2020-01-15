@@ -8,4 +8,5 @@ public class Microsoft implements Company{
     public void fire(){
         System.out.println("You're FIRED!!!!");
     }
+
 }

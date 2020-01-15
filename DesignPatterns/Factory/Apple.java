@@ -11,5 +11,6 @@ public class Apple implements Company{
     public void fire(){
         System.out.println("Sling your hook matey!!!!");
     }
+    
 
 }
