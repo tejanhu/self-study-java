@@ -2,36 +2,39 @@ public class Main{
 
     public static void main(String[] args) {
     
-        Company microsoft = new Microsoft();
-        Company apple = new Apple();
-        Company virgin = new Virgin();
+        Company companyA = new CompanySystemFactory().getInstance("Microsoft");
+        Company companyB = new CompanySystemFactory().getInstance("Apple");
+        Company companyC = new CompanySystemFactory().getInstance("Virgin");
+
 
 
         System.out.println("Microsoft Hiring Status: ");
-        microsoft.employ();
+        companyA.employ();
         System.out.println("Microsoft Rejection Message: ");
-        microsoft.reject();
+        companyA.reject();
         System.out.println("Microsoft Firing Message: ");
-        microsoft.fire();
+        companyA.fire();
 
         System.out.println("");
 
+        
+
         System.out.println("Apple Hiring Status: ");
-        apple.employ();
+        companyB.employ();
         System.out.println("Apple Rejection Message: ");
-        apple.reject();
+        companyB.reject();
         System.out.println("Apple Firing Message: ");
-        apple.fire();
+        companyB.fire();
 
         System.out.println("");
 
 
         System.out.println("Virgin Hiring Status: ");
-        virgin.employ();
+        companyC.employ();
         System.out.println("Virgin Rejection Message: ");
-        virgin.reject();
+        companyC.reject();
         System.out.println("Virgin Firing Message: ");
-        virgin.fire();
+        companyC.fire();
 
 
     }
