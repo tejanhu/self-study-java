@@ -1,6 +1,4 @@
-import java.util.*;
-
-    class Leaf implements Component{
+class Leaf implements Component {
         String name;
         int price;
 
